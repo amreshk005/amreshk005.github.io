@@ -1,5 +1,20 @@
-.header {
-    padding-top: 0;
+header {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
     overflow: hidden;
     background: #e0ebe8;
+}
+
+.header__nav {
+
+    &__logo {}
+
+    &__link {
+        &__1 {}
+
+        &__2 {}
+
+        &__3 {}
+    }
 }
