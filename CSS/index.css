@@ -4,8 +4,9 @@
   box-sizing: border-box; }
 
 body {
-  font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
   line-height: 1.42857143;
   color: #545454;
   background-color: #fff; }
@@ -16,9 +17,146 @@ body {
   height: 100vh;
   width: 100vw; }
 
-header {
+.header {
   margin: 0;
   padding: 0;
   width: 100vw;
+  height: 100vh;
   overflow: hidden;
   background: #e0ebe8; }
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-top: 2rem; }
+  .header__nav__logo {
+    height: 5rem;
+    width: 5rem; }
+  .header__nav__link {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    color: #45b29a; }
+    .header__nav__link > * {
+      padding-right: 6vw;
+      font-size: 120%; }
+
+.header__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .header__content__info {
+    margin-top: 5rem; }
+    .header__content__info--1 {
+      height: 3.7rem;
+      width: 15rem; }
+    .header__content__info--2 {
+      text-align: center;
+      color: #45b29a;
+      padding: 1em 0;
+      font-size: 140%;
+      font-weight: 200; }
+  .header__content__photo {
+    margin-top: 6rem; }
+    .header__content__photo--1 {
+      height: 46vh;
+      width: 103vw; }
+
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: 100vw; }
+  .main__content1__photo {
+    width: 150px;
+    height: 150px; }
+    .main__content1__photo image {
+      vertical-align: middle;
+      overflow: hidden; }
+  .main__content1__heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #45b29a;
+    padding: .5em 0; }
+  .main__content1__info {
+    font-size: 1em;
+    text-align: center;
+    margin-right: 33vw;
+    margin-left: 33vw; }
+  .main__content2__photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/content/home/what-i-do/line-bg@2x.png);
+    background-size: 3px auto;
+    background-position: center center;
+    background-repeat: repeat-x;
+    width: 43rem;
+    height: 150px; }
+    .main__content2__photo--1 {
+      width: 150px;
+      height: 150px; }
+      .main__content2__photo--1 image {
+        vertical-align: middle;
+        overflow: hidden; }
+    .main__content2__photo--2 {
+      background-image: url(../images/content/home/what-i-do/design-icons-vert@2x.png);
+      background-size: 77px 231px;
+      height: 77px;
+      width: 77px;
+      border-radius: 50%;
+      float: left; }
+  .main__content2__heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #45b29a;
+    padding: .5em 0; }
+  .main__content2__info {
+    font-size: 1em;
+    text-align: center;
+    margin-right: 33vw;
+    margin-left: 33vw; }
+  .main__content3__photo--1 {
+    width: 150px;
+    height: 150px; }
+    .main__content3__photo--1 image {
+      vertical-align: middle;
+      overflow: hidden; }
+  .main__content3__heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #45b29a;
+    padding: .5em 0; }
+  .main__content3__info {
+    font-size: 1em;
+    text-align: center;
+    margin-right: 33vw;
+    margin-left: 33vw; }
+  .main__content4__photo {
+    width: 150px;
+    height: 150px; }
+    .main__content4__photo image {
+      vertical-align: middle;
+      overflow: hidden; }
+  .main__content4__heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #45b29a;
+    padding: .5em 0; }
+  .main__content4__info {
+    font-size: 1em;
+    text-align: center;
+    margin-right: 33vw;
+    margin-left: 33vw; }
