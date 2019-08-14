@@ -1,23 +1,54 @@
 .header {
+    position: relative;
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     background: #e0ebe8;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
+    &__leftcloud {
+        position: absolute;
+        background-image: url(../images/ui/cloud.svg);
+        width: 150px;
+        height: 45px;
+        z-index: 998;
+        left: 2em;
+        bottom: 20em;
+    }
 
+    &__rightcloud {
+        position: absolute;
+        background-image: url(../images/ui/cloud.svg);
+        width: 150px;
+        height: 45px;
+        z-index: 998;
+        right: 7em;
+        bottom: 26em;
+    }
 }
 
+
+
 .header__nav {
+    width: 100vw;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 3rem;
     padding-top: 2rem;
+    position: fixed;
+    top: -20vh;
+    transition: all .8s;
+    z-index: 1000;
+
+
 
     &__logo {
         height: 5rem;
@@ -27,7 +58,7 @@
     &__link {
         width: 50vw;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         color: #45b29a;
 
 
@@ -47,19 +78,19 @@
 
 
 .header__content {
-    // padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 40vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    // justify-content: space-between;
+    margin-top: 8rem;
 
 
     &__info {
         margin-top: 5rem;
+
         &--1 {
-            
+
             height: 3.7rem;
             width: 15rem;
         }
@@ -79,7 +110,7 @@
         margin-top: 6rem;
 
         &--1 {
-            height: 46vh;
+            height: 40vh;
             width: 103vw;
         }
     }

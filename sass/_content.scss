@@ -29,7 +29,7 @@
 
         &__heading {
             font-size: 1.5em;
-            font-weight: 400;
+            font-weight: 300;
             color: #45b29a;
             padding: .5em 0;
         }
@@ -44,6 +44,12 @@
 
     &__content2 {
 
+        &__heading {
+            font-size: 2.8em;
+            font-weight: 200;
+            color: #1e836c;
+            padding: .5em 0;
+        }
 
         &__photo {
             display: flex;
@@ -77,15 +83,22 @@
                 height: 77px;
                 width: 77px;
                 border-radius: 50%;
-                float: left;
+                animation-name: content-bubble;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+                -webkit-animation-name: content-bubble;
+                -webkit-animation-duration: 20s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: cubic-bezier(.17, .67, .83, .67);
 
             }
 
         }
 
-        &__heading {
+        &__heading1 {
             font-size: 1.5em;
-            font-weight: 400;
+            font-weight: 300;
             color: #45b29a;
             padding: .5em 0;
         }
@@ -101,7 +114,22 @@
 
 
     &__content3 {
+
+
         &__photo {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url(../images/content/home/what-i-do/line-bg@2x.png);
+            //background image for url
+            background-size: 3px auto;
+            background-position: center center;
+            background-repeat: repeat-x;
+            width: 43rem;
+            // width: 30vw;
+            height: 150px;
+
             &--1 {
                 width: 150px;
                 height: 150px;
@@ -112,12 +140,28 @@
                 }
             }
 
-            &--2 {}
+            &--2 {
+                background-image: url(../images/content/home/what-i-do/dev-icons-vert@2x.png);
+                background-size: 77px 231px;
+                height: 77px;
+                width: 77px;
+                border-radius: 50%;
+                animation-name: content-bubble;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+                -webkit-animation-name: content-bubble;
+                -webkit-animation-duration: 20s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: cubic-bezier(.17, .67, .83, .67);
+
+            }
+
         }
 
         &__heading {
             font-size: 1.5em;
-            font-weight: 400;
+            font-weight: 300;
             color: #45b29a;
             padding: .5em 0;
         }
@@ -130,30 +174,96 @@
         }
     }
 
+
+
+
     &__content4 {
 
-        &__photo {
-            width: 150px;
-            height: 150px;
-
-            image {
-                vertical-align: middle;
-                overflow: hidden;
-            }
-        }
 
         &__heading {
+            font-size: 3.2em;
+            font-weight: 300;
+            color: #1e836c;
+
+        }
+
+        &__heading1 {
             font-size: 1.5em;
-            font-weight: 400;
+            font-weight: 300;
             color: #45b29a;
-            padding: .5em 0;
+            padding: .3em 0;
         }
 
         &__info {
             font-size: 1em;
             text-align: center;
-            margin-right: 33vw;
-            margin-left: 33vw;
+            margin: 3vh 25vw 5vh 25vw;
         }
+
+        &__btn {
+            margin: 2rem;
+            position: relative;
+
+            &__btn1 {
+
+                background: #45b29a;
+                font-size: .8em;
+                color: #1b7f69;
+                text-decoration: none;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: 20px 90px;
+
+            }
+
+            &__email {
+                position: absolute;
+                background-image: url(../images/content/home/contact/mail@2x.png);
+                background-size: 24px 15px;
+                height: 15px;
+                width: 24px;
+                left: 11%;
+                top: 25%;
+
+            }
+
+
+
+
+        }
+    }
+}
+
+
+@keyframes content-bubble {
+    0% {
+        background-position: 0 0;
+    }
+
+    5% {
+        background-position: 0 77px;
+    }
+
+    35% {
+        background-position: 0 77px;
+    }
+
+    40% {
+        background-position: 0 154px;
+    }
+
+    68% {
+        background-position: 0 154px;
+
+    }
+
+    73% {
+        background-position: 0 231px;
+    }
+
+    100% {
+        background-position: 0 231px;
     }
 }

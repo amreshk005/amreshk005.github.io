@@ -1,0 +1,31 @@
+.footer {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #c5ded7;
+    margin-top: 15vh;
+
+    &__nav {
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+
+        &>* {
+            color: #45b29a;
+        }
+
+        &--1 {}
+
+        &--2 {}
+
+        &--3 {}
+    }
+
+    &__copyright {
+        color: #45b29a;
+        font-size: .8em;
+    }
+}
