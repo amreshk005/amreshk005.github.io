@@ -13,8 +13,12 @@
     align-items: center;
     transition: all .8s ease;
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1000px) {
         height: 90vh;
+    }
+
+    @media only screen and (max-width: 500px) {
+        height: 70vh;
     }
 
     &__leftcloud {
@@ -23,13 +27,23 @@
         width: 150px;
         height: 45px;
         z-index: 998;
-        left: 16vw;
+        right: 70%;
         bottom: 51vh;
         transition: all 1s ease-in-out;
 
-        @media only screen and (max-width: 992px) {
-            left: 9vw;
+        @media only screen and (max-width: 1000px) {
+            right: 85%;
             top: 40vh;
+        }
+
+        @media only screen and (max-width: 500px) {
+            right: 85%;
+            top: 40vh;
+        }
+
+        @media only screen and (max-width: 375px) {
+            right: 80%;
+
         }
     }
 
@@ -39,13 +53,24 @@
         width: 150px;
         height: 45px;
         z-index: 998;
-        right: 7em;
-        bottom: 26em;
+        // right: 7rem;
+        left: 70%;
+        bottom: 65vh;
         transition: all 1s ease-in-out;
 
-        @media only screen and (max-width: 992px) {
-            right: 9em;
+        @media only screen and (max-width: 1000px) {
+            left: 82%;
             top: 10em;
+        }
+
+        @media only screen and (max-width: 500px) {
+            left: 83%;
+            top: 6em;
+        }
+
+        @media only screen and (max-width: 375px) {
+            left: 77%;
+
         }
     }
 }
@@ -67,10 +92,23 @@
 
     @media only screen and (max-width: 992px) {}
 
+    @media only screen and (max-width: 500px) {
+        padding-top: 0rem;
+        padding-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: 375px) {
+        height: 15vh;
+    }
 
     &__logo {
         height: 5rem;
         width: 5rem;
+
+        @media only screen and (max-width: 500px) {
+            height: 4rem;
+            width: 4rem;
+        }
     }
 
     &__link {
@@ -83,13 +121,32 @@
         &>* {
             padding-right: 6vw;
             font-size: 120%;
+
+            @media only screen and (max-width: 500px) {
+                padding-right: 4vw;
+                font-size: 100%;
+            }
+
+
+            @media only screen and (max-width: 375px) {
+                // padding-right: 8vw;
+                font-size: 90%;
+
+            }
         }
 
-        &__1 {}
+        &--1 {}
 
-        &__2 {}
+        &--2 {}
 
-        &__3 {}
+        &--3 {
+
+            @media only screen and (max-width: 375px) {
+                padding-right: 8vw;
+                font-size: 90%;
+
+            }
+        }
     }
 }
 
@@ -135,11 +192,19 @@
             margin-top: 2rem;
         }
 
+        @media only screen and (max-width: 500px) {
+            margin-top: -4rem;
+        }
+
         &--1 {
             height: 40vh;
             width: 103vw;
 
             @media only screen and (max-width: 992px) {}
+
+            @media screen and (max-width: 500px) {
+                width: 90vw;
+            }
         }
     }
 

@@ -39,6 +39,18 @@
             text-align: center;
             margin-right: 33vw;
             margin-left: 33vw;
+
+            @media only screen and (max-width: 500px) {
+                margin-right: 15vw;
+                margin-left: 15vw;
+            }
+
+
+            @media only screen and (max-width: 375px) {
+                font-size: .9em;
+                margin-right: 9vw;
+                margin-left: 9vw;
+            }
         }
     }
 
@@ -49,6 +61,12 @@
             font-weight: 200;
             color: #1e836c;
             padding: .5em 0;
+
+
+            @media only screen and (max-width: 375px) {
+                font-size: 2.2em;
+
+            }
         }
 
         &__photo {
@@ -56,16 +74,16 @@
             justify-content: space-between;
             align-items: center;
             background-image: url(../images/content/home/what-i-do/line-bg@2x.png);
-            background-size: 3px auto;
+            background-size: 7px auto;
             background-position: center center;
             background-repeat: repeat-x;
-            width: 43rem;
+            width: 72vw;
             // width: 30vw;
             height: 150px;
 
-
-
-
+            @media only screen and (max-width: 500px) {
+                width: 82vw;
+            }
 
             &--1 {
                 width: 150px;
@@ -101,6 +119,10 @@
             font-weight: 300;
             color: #45b29a;
             padding: .5em 0;
+
+            @media only screen and (max-width: 500px) {
+                margin-top: 1rem;
+            }
         }
 
         &__info {
@@ -108,6 +130,18 @@
             text-align: center;
             margin-right: 33vw;
             margin-left: 33vw;
+
+            @media only screen and (max-width: 500px) {
+                margin-right: 15vw;
+                margin-left: 15vw;
+                margin-top: .8rem;
+            }
+
+            @media only screen and (max-width: 375px) {
+                font-size: .9em;
+                margin-right: 9vw;
+                margin-left: 9vw;
+            }
         }
 
     }
@@ -123,12 +157,16 @@
             align-items: center;
             background-image: url(../images/content/home/what-i-do/line-bg@2x.png);
             //background image for url
-            background-size: 3px auto;
+            background-size: 9px auto;
             background-position: center center;
             background-repeat: repeat-x;
-            width: 43rem;
+            width: 72vw;
             // width: 30vw;
             height: 150px;
+
+            @media only screen and (max-width: 500px) {
+                width: 82vw;
+            }
 
             &--1 {
                 width: 150px;
@@ -164,6 +202,10 @@
             font-weight: 300;
             color: #45b29a;
             padding: .5em 0;
+
+            @media only screen and (max-width: 500px) {
+                margin-top: 1rem;
+            }
         }
 
         &__info {
@@ -171,6 +213,18 @@
             text-align: center;
             margin-right: 33vw;
             margin-left: 33vw;
+
+            @media only screen and (max-width: 500px) {
+                margin-right: 15vw;
+                margin-left: 15vw;
+                margin-top: .8rem;
+            }
+
+            @media only screen and (max-width: 375px) {
+                font-size: .9em;
+                margin-right: 9vw;
+                margin-left: 9vw;
+            }
         }
     }
 
@@ -185,6 +239,11 @@
             font-weight: 300;
             color: #1e836c;
 
+            @media only screen and (max-width: 375px) {
+                font-size: 2em;
+
+            }
+
         }
 
         &__heading1 {
@@ -192,12 +251,30 @@
             font-weight: 300;
             color: #45b29a;
             padding: .3em 0;
+
+            @media only screen and (max-width: 375px) {
+                font-size: 1.05em;
+                margin-right: 9vw;
+                margin-left: 9vw;
+            }
         }
 
         &__info {
             font-size: 1em;
             text-align: center;
             margin: 3vh 25vw 5vh 25vw;
+
+            @media only screen and (max-width: 500px) {
+                margin-right: 8vw;
+                margin-left: 8vw;
+                margin-top: .8rem;
+            }
+
+            @media only screen and (max-width: 375px) {
+                font-size: .9em;
+                margin-right: 7vw;
+                margin-left: 7vw;
+            }
         }
 
         &__btn {

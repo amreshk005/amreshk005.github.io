@@ -31,35 +31,52 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: all .8s ease; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1000px) {
     .header {
       height: 90vh; } }
+  @media only screen and (max-width: 500px) {
+    .header {
+      height: 70vh; } }
   .header__leftcloud {
     position: absolute;
     background-image: url(../images/ui/cloud.svg);
     width: 150px;
     height: 45px;
     z-index: 998;
-    left: 16vw;
+    right: 70%;
     bottom: 51vh;
     transition: all 1s ease-in-out; }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1000px) {
       .header__leftcloud {
-        left: 9vw;
+        right: 85%;
         top: 40vh; } }
+    @media only screen and (max-width: 500px) {
+      .header__leftcloud {
+        right: 85%;
+        top: 40vh; } }
+    @media only screen and (max-width: 375px) {
+      .header__leftcloud {
+        right: 80%; } }
   .header__rightcloud {
     position: absolute;
     background-image: url(../images/ui/cloud.svg);
     width: 150px;
     height: 45px;
     z-index: 998;
-    right: 7em;
-    bottom: 26em;
+    left: 70%;
+    bottom: 65vh;
     transition: all 1s ease-in-out; }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1000px) {
       .header__rightcloud {
-        right: 9em;
+        left: 82%;
         top: 10em; } }
+    @media only screen and (max-width: 500px) {
+      .header__rightcloud {
+        left: 83%;
+        top: 6em; } }
+    @media only screen and (max-width: 375px) {
+      .header__rightcloud {
+        left: 77%; } }
 
 .header__nav {
   width: 100vw;
@@ -73,9 +90,20 @@ body {
   top: 0;
   transition: all .8s ease-in-out;
   z-index: 1000; }
+  @media only screen and (max-width: 500px) {
+    .header__nav {
+      padding-top: 0rem;
+      padding-left: 1.5rem; } }
+  @media only screen and (max-width: 375px) {
+    .header__nav {
+      height: 15vh; } }
   .header__nav__logo {
     height: 5rem;
     width: 5rem; }
+    @media only screen and (max-width: 500px) {
+      .header__nav__logo {
+        height: 4rem;
+        width: 4rem; } }
   .header__nav__link {
     width: 50vw;
     display: flex;
@@ -84,6 +112,17 @@ body {
     .header__nav__link > * {
       padding-right: 6vw;
       font-size: 120%; }
+      @media only screen and (max-width: 500px) {
+        .header__nav__link > * {
+          padding-right: 4vw;
+          font-size: 100%; } }
+      @media only screen and (max-width: 375px) {
+        .header__nav__link > * {
+          font-size: 90%; } }
+    @media only screen and (max-width: 375px) {
+      .header__nav__link--3 {
+        padding-right: 8vw;
+        font-size: 90%; } }
 
 .header__content {
   width: 100vw;
@@ -112,9 +151,15 @@ body {
     @media only screen and (max-width: 992px) {
       .header__content__photo {
         margin-top: 2rem; } }
+    @media only screen and (max-width: 500px) {
+      .header__content__photo {
+        margin-top: -4rem; } }
     .header__content__photo--1 {
       height: 40vh;
       width: 103vw; }
+      @media screen and (max-width: 500px) {
+        .header__content__photo--1 {
+          width: 90vw; } }
 
 .main {
   width: 100vw;
@@ -145,21 +190,36 @@ body {
     text-align: center;
     margin-right: 33vw;
     margin-left: 33vw; }
+    @media only screen and (max-width: 500px) {
+      .main__content1__info {
+        margin-right: 15vw;
+        margin-left: 15vw; } }
+    @media only screen and (max-width: 375px) {
+      .main__content1__info {
+        font-size: .9em;
+        margin-right: 9vw;
+        margin-left: 9vw; } }
   .main__content2__heading {
     font-size: 2.8em;
     font-weight: 200;
     color: #1e836c;
     padding: .5em 0; }
+    @media only screen and (max-width: 375px) {
+      .main__content2__heading {
+        font-size: 2.2em; } }
   .main__content2__photo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: url(../images/content/home/what-i-do/line-bg@2x.png);
-    background-size: 3px auto;
+    background-size: 7px auto;
     background-position: center center;
     background-repeat: repeat-x;
-    width: 43rem;
+    width: 72vw;
     height: 150px; }
+    @media only screen and (max-width: 500px) {
+      .main__content2__photo {
+        width: 82vw; } }
     .main__content2__photo--1 {
       width: 150px;
       height: 150px; }
@@ -185,22 +245,38 @@ body {
     font-weight: 300;
     color: #45b29a;
     padding: .5em 0; }
+    @media only screen and (max-width: 500px) {
+      .main__content2__heading1 {
+        margin-top: 1rem; } }
   .main__content2__info {
     font-size: 1em;
     text-align: center;
     margin-right: 33vw;
     margin-left: 33vw; }
+    @media only screen and (max-width: 500px) {
+      .main__content2__info {
+        margin-right: 15vw;
+        margin-left: 15vw;
+        margin-top: .8rem; } }
+    @media only screen and (max-width: 375px) {
+      .main__content2__info {
+        font-size: .9em;
+        margin-right: 9vw;
+        margin-left: 9vw; } }
   .main__content3__photo {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     background-image: url(../images/content/home/what-i-do/line-bg@2x.png);
-    background-size: 3px auto;
+    background-size: 9px auto;
     background-position: center center;
     background-repeat: repeat-x;
-    width: 43rem;
+    width: 72vw;
     height: 150px; }
+    @media only screen and (max-width: 500px) {
+      .main__content3__photo {
+        width: 82vw; } }
     .main__content3__photo--1 {
       width: 150px;
       height: 150px; }
@@ -226,24 +302,55 @@ body {
     font-weight: 300;
     color: #45b29a;
     padding: .5em 0; }
+    @media only screen and (max-width: 500px) {
+      .main__content3__heading {
+        margin-top: 1rem; } }
   .main__content3__info {
     font-size: 1em;
     text-align: center;
     margin-right: 33vw;
     margin-left: 33vw; }
+    @media only screen and (max-width: 500px) {
+      .main__content3__info {
+        margin-right: 15vw;
+        margin-left: 15vw;
+        margin-top: .8rem; } }
+    @media only screen and (max-width: 375px) {
+      .main__content3__info {
+        font-size: .9em;
+        margin-right: 9vw;
+        margin-left: 9vw; } }
   .main__content4__heading {
     font-size: 3.2em;
     font-weight: 300;
     color: #1e836c; }
+    @media only screen and (max-width: 375px) {
+      .main__content4__heading {
+        font-size: 2em; } }
   .main__content4__heading1 {
     font-size: 1.5em;
     font-weight: 300;
     color: #45b29a;
     padding: .3em 0; }
+    @media only screen and (max-width: 375px) {
+      .main__content4__heading1 {
+        font-size: 1.05em;
+        margin-right: 9vw;
+        margin-left: 9vw; } }
   .main__content4__info {
     font-size: 1em;
     text-align: center;
     margin: 3vh 25vw 5vh 25vw; }
+    @media only screen and (max-width: 500px) {
+      .main__content4__info {
+        margin-right: 8vw;
+        margin-left: 8vw;
+        margin-top: .8rem; } }
+    @media only screen and (max-width: 375px) {
+      .main__content4__info {
+        font-size: .9em;
+        margin-right: 7vw;
+        margin-left: 7vw; } }
   .main__content4__btn {
     margin: 2rem;
     position: relative; }
